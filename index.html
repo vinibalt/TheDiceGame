@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dicee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>Click the Dicee</h1>
+
+      <div class="dice">
+        <p onclick="setDiceeImg(diceeImgs); whoWins()">Player 1</p>
+        <img class="img1" src="./images/dice6.png" onclick="setDiceeImg(diceeImgs); whoWins()">
+      </div>
+
+      <div class="dice">
+        <p onclick="setDiceeImg(diceeImgs); whoWins()">Player 2</p>
+        <img class="img2" src="./images/dice6.png" onclick="setDiceeImg(diceeImgs); whoWins()">
+      </div>
+
+    </div>
+    <div style="display: flex; flex-direction: row; justify-content: space-between; padding:  0 1rem;">
+        <p class="countPOne">Player One: 0 </p>
+        <p class="countPTwo"> Player Two: 0</p>
+    </div>
+    <div class="btn-container">
+        <button class="btn-reset" onclick="shuffle()">Reset</button>
+    </div>
+    
+  </body>
+
+  <footer>
+    www 🎲 App Brewery 🎲 com
+  </footer>
+  <script src="./main.js"></script>
+</html>
